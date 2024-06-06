@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../Core/BaseAuditDTO/">
+        <link rel="prev" href="../Ticket%20Details/">
       
-      
-        <link rel="next" href="../Sending%20Replies%20to%20Tickets/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>New Support Ticket - Envision EV Documentation</title>
+        <title>Ticket Messages - Envision EV Documentation</title>
       
     
     
@@ -69,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#post-createticket" class="md-skip">
+        <a href="#get-getticketmessages" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              New Support Ticket
+              Ticket Messages
             
           </span>
         </div>
@@ -308,27 +306,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    New Support Ticket
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../New%20Support%20Ticket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -337,58 +317,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#post-createticket" class="md-nav__link">
-    [POST] createTicket
-  </a>
-  
-    <nav class="md-nav" aria-label="[POST] createTicket">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.technical_support.dtos.CreateTicketDTO.CreateTicketRequestDTO" class="md-nav__link">
-    CreateTicketRequestDTO
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.technical_support.dtos.CreateTicketDTO.CreateTicketResponseDTO" class="md-nav__link">
-    CreateTicketResponseDTO
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -458,9 +386,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Ticket%20Messages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ticket Messages
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -469,6 +415,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-getticketmessages" class="md-nav__link">
+    [GET] getTicketMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="[GET] getTicketMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-an-api-request-with-the-following-query-string-parameters" class="md-nav__link">
+    Create an API request with the following query string parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.dtos.TicketMessagesRequestDTO.TicketMessagesRequestDTO" class="md-nav__link">
+    TicketMessagesRequestDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-api-will-return-a-response-in-the-following-format" class="md-nav__link">
+    The API will return a response in the following format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.dtos.TicketMessagesResponseDTO.TicketMessagesResponseDTO" class="md-nav__link">
+    TicketMessagesResponseDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-message-parameter-will-map-to-an-array-containing-objects-comprised-of-following-format" class="md-nav__link">
+    The message parameter will map to an array containing objects comprised of following format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.dtos.TicketMessageDTO.TicketMessageDTO" class="md-nav__link">
+    TicketMessageDTO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -506,30 +525,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#post-createticket" class="md-nav__link">
-    [POST] createTicket
+  <a href="#get-getticketmessages" class="md-nav__link">
+    [GET] getTicketMessages
   </a>
   
-    <nav class="md-nav" aria-label="[POST] createTicket">
+    <nav class="md-nav" aria-label="[GET] getTicketMessages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules.technical_support.dtos.CreateTicketDTO.CreateTicketRequestDTO" class="md-nav__link">
-    CreateTicketRequestDTO
+  <a href="#create-an-api-request-with-the-following-query-string-parameters" class="md-nav__link">
+    Create an API request with the following query string parameters:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules.technical_support.dtos.CreateTicketDTO.CreateTicketResponseDTO" class="md-nav__link">
-    CreateTicketResponseDTO
+  <a href="#modules.technical_support.dtos.TicketMessagesRequestDTO.TicketMessagesRequestDTO" class="md-nav__link">
+    TicketMessagesRequestDTO
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
+  <a href="#the-api-will-return-a-response-in-the-following-format" class="md-nav__link">
+    The API will return a response in the following format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.dtos.TicketMessagesResponseDTO.TicketMessagesResponseDTO" class="md-nav__link">
+    TicketMessagesResponseDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-message-parameter-will-map-to-an-array-containing-objects-comprised-of-following-format" class="md-nav__link">
+    The message parameter will map to an array containing objects comprised of following format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.dtos.TicketMessageDTO.TicketMessageDTO" class="md-nav__link">
+    TicketMessageDTO
   </a>
   
 </li>
@@ -554,20 +594,21 @@
                   
 
 
-  <h1>New Support Ticket</h1>
+  <h1>Ticket Messages</h1>
 
-<p><img alt="" src="../New%20Support%20Ticket.png" /></p>
-<h2 id="post-createticket">[POST] createTicket</h2>
-<pre><code>/api/technicalSupport/createTicket
-</code></pre>
+<p><img alt="" src="../Ticket%20Details.png" /></p>
+<h2 id="get-getticketmessages">[GET] getTicketMessages</h2>
+<div class="highlight"><pre><span></span><code>/api/technicalSupport/getTicketMessages
+</code></pre></div>
+<h3 id="create-an-api-request-with-the-following-query-string-parameters">Create an API request with the following query string parameters:</h3>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h3 class="doc doc-heading" id="modules.technical_support.dtos.CreateTicketDTO.CreateTicketRequestDTO">
-        <code>CreateTicketRequestDTO</code>
+<h3 class="doc doc-heading" id="modules.technical_support.dtos.TicketMessagesRequestDTO.TicketMessagesRequestDTO">
+        <code>TicketMessagesRequestDTO</code>
 
   
   <span class="doc doc-labels">
@@ -592,35 +633,167 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>title</code></td>
+          <td><code>ticket_id</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>unique ticket identifier</p>
             </div>
           </td>
         </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h3 id="the-api-will-return-a-response-in-the-following-format">The API will return a response in the following format:</h3>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 class="doc doc-heading" id="modules.technical_support.dtos.TicketMessagesResponseDTO.TicketMessagesResponseDTO">
+        <code>TicketMessagesResponseDTO</code>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
         <tr>
-          <td><code>location</code></td>
+          <td><code>messages</code></td>
           <td>
-                <code>int</code>
+                <code>[<a class="autorefs autorefs-internal" title="modules.technical_support.dtos.TicketMessageDTO.TicketMessageDTO" href="#modules.technical_support.dtos.TicketMessageDTO.TicketMessageDTO">TicketMessageDTO</a>]</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Site ID</p>
+              <p>List of messages</p>
             </div>
           </td>
         </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h3 id="the-message-parameter-will-map-to-an-array-containing-objects-comprised-of-following-format">The message parameter will map to an array containing objects comprised of following format:</h3>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 class="doc doc-heading" id="modules.technical_support.dtos.TicketMessageDTO.TicketMessageDTO">
+        <code>TicketMessageDTO</code>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
         <tr>
-          <td><code>details</code></td>
+          <td><code>message</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>message content</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>created_date_utc</code></td>
+          <td>
+                <code><span title="datetime.datetime">datetime</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>ticket creation datetime in the UTC</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>username</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>username</p>
             </div>
           </td>
         </tr>
@@ -648,74 +821,6 @@
   </div>
 
 </div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.technical_support.dtos.CreateTicketDTO.CreateTicketResponseDTO">
-        <code>CreateTicketResponseDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>ticket_id</code></td>
-          <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div><h3 id="notes">Notes</h3>
-<ul>
-<li>Uploading of files will be added in the future.</li>
-</ul>
 
 
 
