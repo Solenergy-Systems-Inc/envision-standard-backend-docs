@@ -644,6 +644,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#post-deletepricingprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      [POST] deletePricingProfile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[POST] deletePricingProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeletePricingProfileRequestDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeletePricingProfileResponseDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -972,6 +1014,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#post-deletepricingprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      [POST] deletePricingProfile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[POST] deletePricingProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeletePricingProfileRequestDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeletePricingProfileResponseDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1071,6 +1155,32 @@
 
 
 
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileResponseDTO.profiles">profiles</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO" href="#modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO">PricingProfileDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of pricing profiles in the format of PricingProfileDTO</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
 
   <div class="doc doc-children">
 
@@ -1103,6 +1213,76 @@
 
     <div class="doc doc-contents first">
 
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO.id">id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>pricing profile id</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO.name">name</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>name of the pricing profile</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO.regular">regular</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>key value pairs of different fee types and its price</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO.peak">peak</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>key value pairs of different fee types and its price for peak hours</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.dtos.PricingProfileRequestDTO.PricingProfileDTO.peak_hours">peak_hours</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>range of peak hours in PHT</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
 
@@ -1605,6 +1785,225 @@
             <td>
               <div class="doc-md-description">
                 <p>profile id to be associated to the charger. This is related to pricing and can be found in</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><h2 id="post-deletepricingprofile">[POST] deletePricingProfile</h2>
+<pre><code>/api/deletePricingProfile
+</code></pre>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileRequestDTO" class="doc doc-heading">
+            <code>DeletePricingProfileRequestDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileRequestDTO.project_id">project_id</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>project ID of the pricing profile id</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileRequestDTO.profile_id">profile_id</span></code></td>
+            <td>
+                  <code><span title="typing_extensions.Annotated">Annotated</span>[int, <span title="pydantic.Field">Field</span>(gt=1)]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>unique ID given to a pricing profile</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileResponseDTO" class="doc doc-heading">
+            <code>DeletePricingProfileResponseDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.DeletePricingProfileResponseDTO.affected_chargers">affected_chargers</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO" href="#modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO">ChargerDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>a list of all affected chargers in the format of ChargerDTO</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO" class="doc doc-heading">
+            <code>ChargerDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>site_id assigned to the charger</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO.charger_id">charger_id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>id assigned to the charger</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.ev_admin.endpoints.deletePricingProfile.ChargerDTO.connector_id">connector_id</span></code></td>
+            <td>
+                  <code><span title="typing_extensions.Annotated">Annotated</span>[int, <span title="pydantic.Field">Field</span>(validation_alias=conn_id)]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>connector of the charger affected by the change in pricing profile</p>
               </div>
             </td>
           </tr>
