@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../%5BPOST%5D%20addDriver/">
+        <link rel="prev" href="../%5BGET%5D%20chargerInfo/">
       
       
-        <link rel="next" href="../../../EVCS%20Manager/Ongoing%20Transactions/">
+        <link rel="next" href="../%5BGET%5D%20evGraph/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
-        <title>[POST] editDriver - Envision Standard</title>
+        <title>[GET] chargerMeterGraph - Envision Standard</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
       
 
@@ -43,11 +43,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO" class="md-skip">
+        <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] editDriver
+              [GET] chargerMeterGraph
             
           </span>
         </div>
@@ -177,7 +177,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -195,7 +195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -250,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Core/BaseAuditDTO/" class="md-nav__link">
+      <a href="../../Core/BaseAuditDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20chargerHistory/" class="md-nav__link">
+      <a href="../%5BGET%5D%20chargerHistory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -336,153 +336,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20chargerInfo/" class="md-nav__link">
+      <a href="../%5BGET%5D%20chargerInfo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     [GET] chargerInfo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20chargerMeterGraph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] chargerMeterGraph
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20evGraph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] evGraph
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20siteChargers/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] siteChargers
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Driver
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_6">
-            <span class="md-nav__icon md-icon"></span>
-            Driver
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BGET%5D%20driverList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] driverList
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20addDriver/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] addDriver
   </span>
   
 
@@ -510,7 +368,7 @@
           
   
   <span class="md-ellipsis">
-    [POST] editDriver
+    [GET] chargerMeterGraph
   </span>
   
 
@@ -521,7 +379,7 @@
         
   
   <span class="md-ellipsis">
-    [POST] editDriver
+    [GET] chargerMeterGraph
   </span>
   
 
@@ -541,18 +399,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      EditDriverRequestDTO
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverResponseDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      EditDriverResponseDTO
+      ChargerMeterGraphResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerMeterGraphStatisticsDTO
     </span>
   </a>
   
@@ -562,6 +429,146 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20evGraph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] evGraph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20siteChargers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] siteChargers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Driver
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Driver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BGET%5D%20driverList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] driverList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BPOST%5D%20addDriver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] addDriver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BPOST%5D%20editDriver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] editDriver
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -624,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../EVCS%20Manager/Ongoing%20Transactions/" class="md-nav__link">
+      <a href="../../EVCS%20Manager/Ongoing%20Transactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../EVCS%20Manager/Pricing%20Profiles/" class="md-nav__link">
+      <a href="../../EVCS%20Manager/Pricing%20Profiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../EVCS%20Manager/Transactions%20Summary/" class="md-nav__link">
+      <a href="../../EVCS%20Manager/Transactions%20Summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -729,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Technical%20Support/New%20Support%20Ticket/" class="md-nav__link">
+      <a href="../../Technical%20Support/New%20Support%20Ticket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Technical%20Support/Sending%20Replies%20to%20Tickets/" class="md-nav__link">
+      <a href="../../Technical%20Support/Sending%20Replies%20to%20Tickets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Technical%20Support/Support%20Ticket%20List/" class="md-nav__link">
+      <a href="../../Technical%20Support/Support%20Ticket%20List/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Technical%20Support/Ticket%20Details/" class="md-nav__link">
+      <a href="../../Technical%20Support/Ticket%20Details/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,18 +845,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      EditDriverRequestDTO
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverResponseDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      EditDriverResponseDTO
+      ChargerMeterGraphResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerMeterGraphStatisticsDTO
     </span>
   </a>
   
@@ -870,9 +886,9 @@
                   
 
 
-  <h1>[POST] editDriver</h1>
+  <h1>[GET] chargerMeterGraph</h1>
 
-<pre><code>/api/editDriver
+<pre><code>/api/chargerMeterGraph
 </code></pre>
 
 
@@ -880,11 +896,11 @@
 
 
 
-<h2 id="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO" class="doc doc-heading">
-            <code>EditDriverRequestDTO</code>
+<h3 id="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphRequestDTO</code>
 
 
-</h2>
+</h3>
 
 
     <div class="doc doc-contents first">
@@ -903,68 +919,68 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.id">id</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.site_id">site_id</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>assigned site id</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.email_add">email_add</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.start">start</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[<span title="typing.Optional">Optional</span>[str], <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateEmail.validateEmail">validateEmail</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>start datetime in the format of %Y-%m-%d %H:%M:%S</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.first_name">first_name</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.end">end</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[<span title="typing.Optional">Optional</span>[str], <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateName.validateName">validateName</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>end datetime in the format of %Y-%m-%d %H:%M:%S</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.last_name">last_name</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.tz">tz</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[<span title="typing.Optional">Optional</span>[str], <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateName.validateName">validateName</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>timezone of the user</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.rfid">rfid</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.graph_type">graph_type</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[str]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>bar or graph</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverRequestDTO.private_access">private_access</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphRequestDTO.user_id">user_id</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[int]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>id of the user</p>
               </div>
             </td>
           </tr>
@@ -996,11 +1012,11 @@
 
 
 
-<h2 id="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverResponseDTO" class="doc doc-heading">
-            <code>EditDriverResponseDTO</code>
+<h3 id="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphResponseDTO</code>
 
 
-</h2>
+</h3>
 
 
     <div class="doc doc-contents first">
@@ -1019,24 +1035,140 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverResponseDTO.id">id</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO.charger_meter_data">charger_meter_data</span></code></td>
             <td>
-                  <code>str</code>
+                  <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>datapoints for the graph</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.editDriver.EditDriverResponseDTO.driver_patch">driver_patch</span></code></td>
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO.order">order</span></code></td>
             <td>
-                  <code><span title="typing.Dict">Dict</span></code>
+                  <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>order of the datapoints in the graph. First index will always be the datetime</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphResponseDTO.statistics">statistics</span></code></td>
+            <td>
+                  <code><span title="typing.Union">Union</span>[dict, <a class="autorefs autorefs-internal" title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO" href="#modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO">ChargerMeterGraphStatisticsDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>statistics based on the given date range in the format of <code>ChargerMeterGraphStatisticsDTO</code></p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphStatisticsDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO.total_energy">total_energy</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>monthly total energy in kWh</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO.peak_power">peak_power</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the peak power generated in the given datetime range</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO.peak_time">peak_time</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>time of which the peak power occurred</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO.load_factor">load_factor</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the average load divided by the peak load in a specified time period</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.ChargerMeterGraphDTOs.ChargerMeterGraphStatisticsDTO.latest">latest</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>latest reading from the selected device in kW</p>
               </div>
             </td>
           </tr>
@@ -1109,10 +1241,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
