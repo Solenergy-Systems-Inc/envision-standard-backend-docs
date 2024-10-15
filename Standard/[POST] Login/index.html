@@ -732,6 +732,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#possible-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Error Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -916,6 +925,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#possible-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Error Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1082,7 +1100,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.profile_picture">profile_picture</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><span title="typing.Union">Union</span>[str, None]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1126,7 +1144,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.subscription_expiry_date">subscription_expiry_date</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><span title="typing.Union">Union</span>[str, None]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1156,7 +1174,12 @@
 
     </div>
 
-</div>
+</div><h2 id="possible-error-codes">Possible Error Codes</h2>
+<ul>
+<li><code>ACCOUNT_NOT_EXIST</code> - The given email does not exist</li>
+<li><code>WRONG_CREDENTIALS</code> - The given password does not match the stored password for the given email address</li>
+<li><code>ACCOUNT_LOCKED</code> - Access to the account has been locked by the administrator. </li>
+</ul>
 
 
 
