@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20driverList/">
+        <link rel="prev" href="../%5BPOST%5D%20editDriver/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20editDriver/">
+        <link rel="next" href="../../../EVCS%20Manager/Ongoing%20Transactions/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] addDriver - Envision Standard</title>
+        <title>[POST] registerDriver - Envision Standard</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO" class="md-skip">
+        <a href="#modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] addDriver
+              [POST] registerDriver
             
           </span>
         </div>
@@ -457,11 +457,53 @@
   
   
     <li class="md-nav__item">
+      <a href="../%5BGET%5D%20driverInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] driverInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%5BGET%5D%20driverList/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     [GET] driverList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20editDriver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] editDriver
   </span>
   
 
@@ -489,7 +531,7 @@
           
   
   <span class="md-ellipsis">
-    [POST] addDriver
+    [POST] registerDriver
   </span>
   
 
@@ -500,7 +542,7 @@
         
   
   <span class="md-ellipsis">
-    [POST] addDriver
+    [POST] registerDriver
   </span>
   
 
@@ -520,18 +562,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO" class="md-nav__link">
+  <a href="#modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      AddDriverRequestDTO
+      RegisterDriverRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverResponseDTO" class="md-nav__link">
+  <a href="#expected-error-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      AddDriverResponseDTO
+      Expected Error Messages
     </span>
   </a>
   
@@ -541,27 +583,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20editDriver/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] editDriver
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -922,18 +943,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO" class="md-nav__link">
+  <a href="#modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      AddDriverRequestDTO
+      RegisterDriverRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverResponseDTO" class="md-nav__link">
+  <a href="#expected-error-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      AddDriverResponseDTO
+      Expected Error Messages
     </span>
   </a>
   
@@ -954,9 +975,9 @@
                   
 
 
-  <h1>[POST] addDriver</h1>
+  <h1>[POST] registerDriver</h1>
 
-<pre><code>/api/addDriver
+<pre><code>/api/registerDriver
 </code></pre>
 
 
@@ -964,8 +985,8 @@
 
 
 
-<h2 id="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO" class="doc doc-heading">
-            <code>AddDriverRequestDTO</code>
+<h2 id="modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO" class="doc doc-heading">
+            <code>RegisterDriverRequestDTO</code>
 
 
 </h2>
@@ -987,7 +1008,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.email_add">email_add</span></code></td>
+            <td><code><span title="modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO.email_add">email_add</span></code></td>
             <td>
                   <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateEmail.validateEmail">validateEmail</span>)]</code>
             </td>
@@ -998,51 +1019,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.first_name">first_name</span></code></td>
-            <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateName.validateName">validateName</span>)]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.last_name">last_name</span></code></td>
-            <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.ev_admin.drivers.__.services.validateName.validateName">validateName</span>)]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.rfid">rfid</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.phone_number">phone_number</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[str]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverRequestDTO.private_access">private_access</span></code></td>
+            <td><code><span title="modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO.private_access">private_access</span></code></td>
             <td>
                   <code><span title="typing.List">List</span>[int]</code>
             </td>
@@ -1052,58 +1029,8 @@
               </div>
             </td>
           </tr>
-      </tbody>
-    </table>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverResponseDTO" class="doc doc-heading">
-            <code>AddDriverResponseDTO</code>
-
-
-</h2>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-<p><span class="doc-section-title">Attributes:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.ev_admin.drivers.__.endpoints.addDriver.AddDriverResponseDTO.id">id</span></code></td>
+            <td><code><span title="modules.ev_admin.drivers.__.endpoints.registerDriver.RegisterDriverRequestDTO.rfid">rfid</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -1135,7 +1062,13 @@
 
     </div>
 
-</div>
+</div><h2 id="expected-error-messages">Expected Error Messages</h2>
+<ul>
+<li><code>ACCOUNT_NOT_EXIST</code> - The given email of the driver does not exist in the system.</li>
+<li><code>RFID_IN_USE</code> - The given RFID is already associated with another driver.</li>
+<li><code>WRONG_PARAMS</code> - Thrown when RFID is an empty string</li>
+<li><code>RFID_BLOCKED</code> - The given RFID is blocked and cannot be associated with a driver.</li>
+</ul>
 
 
 
