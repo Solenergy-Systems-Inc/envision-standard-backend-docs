@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Monitoring/%5BGET%5D%20meterInfo/">
+        <link rel="prev" href="../../EVCS%20Manager/Driver/%5BPOST%5D%20registerDriver/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20siteImage/">
+        <link rel="next" href="../../Standard/%5BPOST%5D%20Login/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] Login - Envision Standard</title>
+        <title>[GET] meterInfo - Envision Standard</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.user.dtos.LoginDTOs.LoginRequestDTO" class="md-skip">
+        <a href="#modules.monitoring.endpoints.meter_info.MeterInfoRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] Login
+              [GET] meterInfo
             
           </span>
         </div>
@@ -654,17 +654,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -678,75 +680,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Monitoring
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Monitoring/%5BGET%5D%20meterInfo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] meterInfo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Standard
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Standard
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -768,7 +705,7 @@
           
   
   <span class="md-ellipsis">
-    [POST] Login
+    [GET] meterInfo
   </span>
   
 
@@ -779,7 +716,7 @@
         
   
   <span class="md-ellipsis">
-    [POST] Login
+    [GET] meterInfo
   </span>
   
 
@@ -799,29 +736,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.user.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterInfoRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginRequestDTO
+      MeterInfoRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.user.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginResponseDTO
+      MeterInfoResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MeterInfoResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterDetailsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      MeterDetailsDTO
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#possible-error-codes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.ElectricalParamsDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Possible Error Codes
+      ElectricalParamsDTO
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.HarmonicsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      HarmonicsDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -834,6 +795,48 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Standard
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -841,7 +844,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20siteImage/" class="md-nav__link">
+      <a href="../../Standard/%5BPOST%5D%20Login/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] Login
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,29 +1037,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.user.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterInfoRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginRequestDTO
+      MeterInfoRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.user.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginResponseDTO
+      MeterInfoResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MeterInfoResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.MeterDetailsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      MeterDetailsDTO
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#possible-error-codes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.ElectricalParamsDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Possible Error Codes
+      ElectricalParamsDTO
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.monitoring.endpoints.meter_info.HarmonicsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      HarmonicsDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1054,9 +1102,9 @@
                   
 
 
-  <h1>[POST] Login</h1>
+  <h1>[GET] meterInfo</h1>
 
-<pre><code>/api/login
+<pre><code>/api/monitoring/meterInfo
 </code></pre>
 
 
@@ -1064,8 +1112,8 @@
 
 
 
-<h3 id="modules.user.dtos.LoginDTOs.LoginRequestDTO" class="doc doc-heading">
-            <code>LoginRequestDTO</code>
+<h3 id="modules.monitoring.endpoints.meter_info.MeterInfoRequestDTO" class="doc doc-heading">
+            <code>MeterInfoRequestDTO</code>
 
 
 </h3>
@@ -1087,35 +1135,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginRequestDTO.email">email</span></code></td>
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterInfoRequestDTO.meter_id">meter_id</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>email of the user</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginRequestDTO.password">password</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>password of the user</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginRequestDTO.is_mobile">is_mobile</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[bool]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>flag to indicate if the request is from a mobile app</p>
+                <p>ID of the meter</p>
               </div>
             </td>
           </tr>
@@ -1147,8 +1173,8 @@
 
 
 
-<h3 id="modules.user.dtos.LoginDTOs.LoginResponseDTO" class="doc doc-heading">
-            <code>LoginResponseDTO</code>
+<h3 id="modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO" class="doc doc-heading">
+            <code>MeterInfoResponseDTO</code>
 
 
 </h3>
@@ -1170,112 +1196,35 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.project_id">project_id</span></code></td>
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO.meter_details">meter_details</span></code></td>
             <td>
-                  <code>int</code>
+                  <code><a class="autorefs autorefs-internal" title="modules.monitoring.endpoints.meter_info.MeterDetailsDTO" href="#modules.monitoring.endpoints.meter_info.MeterDetailsDTO">MeterDetailsDTO</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>assigned project id to the user</p>
+                
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.email">email</span></code></td>
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO.electrical_params">electrical_params</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><a class="autorefs autorefs-internal" title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO" href="#modules.monitoring.endpoints.meter_info.ElectricalParamsDTO">ElectricalParamsDTO</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>email of the user</p>
+                
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.user_id">user_id</span></code></td>
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterInfoResponseDTO.harmonic_distortion">harmonic_distortion</span></code></td>
             <td>
-                  <code>int</code>
+                  <code><a class="autorefs autorefs-internal" title="modules.monitoring.endpoints.meter_info.HarmonicsDTO" href="#modules.monitoring.endpoints.meter_info.HarmonicsDTO">HarmonicsDTO</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>unique id of the user</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.master_account">master_account</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>flag if user is a master account</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.profile_picture">profile_picture</span></code></td>
-            <td>
-                  <code><span title="typing.Union">Union</span>[str, None]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>profile picture of the user</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.project_name">project_name</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>name of the project</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.user_type">user_type</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>UserTypeEnum</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.token">token</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>generated token for the session</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.subscription_expiry_date">subscription_expiry_date</span></code></td>
-            <td>
-                  <code><span title="typing.Union">Union</span>[str, None]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>date when the subscription of envision monitoring expires in the format of "YYYY-MM-DD"</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.user.dtos.LoginDTOs.LoginResponseDTO.features">features</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[List[str]]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of features available to the user</p>
+                
               </div>
             </td>
           </tr>
@@ -1301,12 +1250,388 @@
 
     </div>
 
-</div><h2 id="possible-error-codes">Possible Error Codes</h2>
-<ul>
-<li><code>ACCOUNT_NOT_EXIST</code> - The given email does not exist</li>
-<li><code>WRONG_CREDENTIALS</code> - The given password does not match the stored password for the given email address</li>
-<li><code>ACCOUNT_LOCKED</code> - Access to the account has been locked by the administrator. </li>
-</ul>
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.monitoring.endpoints.meter_info.MeterDetailsDTO" class="doc doc-heading">
+            <code>MeterDetailsDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterDetailsDTO.serial_number">serial_number</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterDetailsDTO.brand">brand</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.MeterDetailsDTO.model">model</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO" class="doc doc-heading">
+            <code>ElectricalParamsDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.v_ab">v_ab</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.v_bc">v_bc</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.v_ca">v_ca</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.i_2">i_2</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.i_3">i_3</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.active_power_in">active_power_in</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.active_power_out">active_power_out</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.reactive_power">reactive_power</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.power_factor">power_factor</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.active_energy_in">active_energy_in</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.active_energy_out">active_energy_out</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.ElectricalParamsDTO.reactive_energy">reactive_energy</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.monitoring.endpoints.meter_info.HarmonicsDTO" class="doc doc-heading">
+            <code>HarmonicsDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_vab">thd_vab</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_vbc">thd_vbc</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_vca">thd_vca</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_ia">thd_ia</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_ib">thd_ib</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.monitoring.endpoints.meter_info.HarmonicsDTO.thd_ic">thd_ic</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
