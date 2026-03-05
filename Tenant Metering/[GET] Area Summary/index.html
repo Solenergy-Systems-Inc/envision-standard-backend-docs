@@ -1560,33 +1560,11 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO.total_energy">total_energy</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[float]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
                 <p>Total energy which is the summation of all tenant consumption in kWh</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO.peak_power">peak_power</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[float]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The highest power recorded across all aggregated tenant meter readings per 5 minute in kW</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO.peak_power_datetime">peak_power_datetime</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[<span title="datetime.datetime">datetime</span>]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Datetime when the peak power occurred</p>
               </div>
             </td>
           </tr>
@@ -1654,7 +1632,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO.previous_reading">previous_reading</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[float]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1665,7 +1643,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO.current_reading">current_reading</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[float]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
