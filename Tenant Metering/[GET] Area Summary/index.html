@@ -12,7 +12,7 @@
         <link rel="prev" href="../%5BGET%5D%20Area%20Summary%20CSV/">
       
       
-        <link rel="next" href="../%5BGET%5D%20Billing%20Settings/">
+        <link rel="next" href="../%5BGET%5D%20Billing%20Periods/">
       
       
         
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO" class="md-skip">
+        <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -1074,7 +1074,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       
         AreaSummaryRequestDTO
@@ -1108,7 +1108,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="md-nav__link">
     <span class="md-ellipsis">
       
         TenantConsumptionDTO
@@ -1127,6 +1127,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] Billing Periods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1304,7 +1332,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       
         AreaSummaryRequestDTO
@@ -1338,7 +1366,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="md-nav__link">
     <span class="md-ellipsis">
       
         TenantConsumptionDTO
@@ -1380,7 +1408,7 @@
 
 
 
-<h3 id="modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO" class="doc doc-heading">
+<h3 id="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="doc doc-heading">
             <code>AreaSummaryRequestDTO</code>
 
 
@@ -1403,7 +1431,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO.area_meter_id">area_meter_id</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.area_meter_id">area_meter_id</span></code></td>
             <td>
                   <code>int</code>
             </td>
@@ -1414,7 +1442,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO.start_datetime">start_datetime</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.start_datetime">start_datetime</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
@@ -1425,7 +1453,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.AreaSummaryRequestDTO.end_datetime">end_datetime</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.end_datetime">end_datetime</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
@@ -1486,13 +1514,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.tenant_summaries">tenant_summaries</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.type">type</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO" href="#modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO">TenantConsumptionDTO</a>]</code>
+                  <code><span title="typing.Literal">Literal</span>[&#39;virtual&#39;, &#39;physical&#39;]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of tenant consumption summaries</p>
+                
               </div>
             </td>
           </tr>
@@ -1504,6 +1532,17 @@
             <td>
               <div class="doc-md-description">
                 <p>contains total energy and peak power information for the area</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.tenant_summaries">tenant_summaries</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO">TenantConsumptionDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>List of tenant consumption summaries</p>
               </div>
             </td>
           </tr>
@@ -1596,7 +1635,7 @@
 
 
 
-<h4 id="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO" class="doc doc-heading">
+<h4 id="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="doc doc-heading">
             <code>TenantConsumptionDTO</code>
 
 
@@ -1619,7 +1658,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO.unit">unit</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.unit">unit</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -1630,7 +1669,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO.previous_reading">previous_reading</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.previous_reading">previous_reading</span></code></td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
             </td>
@@ -1641,7 +1680,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.dto.area_summary_dto.TenantConsumptionDTO.current_reading">current_reading</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.current_reading">current_reading</span></code></td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
             </td>
