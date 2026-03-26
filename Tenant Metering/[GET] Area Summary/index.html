@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20generationGraph/">
+        <link rel="prev" href="../%5BGET%5D%20Area%20Summary%20CSV/">
       
       
-        <link rel="next" href="../../Monitoring/%5BGET%5D%20meterInfo/">
+        <link rel="next" href="../%5BGET%5D%20Billing%20Periods/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[GET] irradianceGraph - Envision Standard</title>
+        <title>[GET] Area Summary - Envision Standard</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-skip">
+        <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] irradianceGraph
+              [GET] Area Summary
             
           </span>
         </div>
@@ -353,20 +353,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -382,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Graphing
@@ -396,12 +394,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20chargerMeterGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20charger/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] chargerMeterGraph
+    [GET] charger
     
   </span>
   
@@ -419,12 +417,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20consumptionGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] consumptionGraph
+    [GET] consumption
     
   </span>
   
@@ -442,12 +440,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20generationGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20generation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] generationGraph
+    [GET] generation
     
   </span>
   
@@ -462,76 +460,20 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    [GET] irradianceGraph
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Graphing/%5BGET%5D%20irradiance/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] irradianceGraph
+    [GET] irradiance
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      IrradianceGraphRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      IrradianceGraphResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -703,6 +645,317 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tenant Metering
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tenant Metering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      AreaSummaryRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      AreaSummaryResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AreaSummaryResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      AreaSummaryDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      TenantConsumptionDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Periods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Tenant Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [PUT] Billing Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -728,20 +981,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      IrradianceGraphRequestDTO
+      AreaSummaryRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      IrradianceGraphResponseDTO
+      AreaSummaryResponseDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="AreaSummaryResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      AreaSummaryDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      TenantConsumptionDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -761,9 +1038,9 @@
 
 
 
-  <h1>[GET] irradianceGraph</h1>
+  <h1>[GET] Area Summary</h1>
 
-<pre><code>/api/graphs/irradiance
+<pre><code>/api/tenant-metering/area
 </code></pre>
 
 
@@ -771,8 +1048,8 @@
 
 
 
-<h3 id="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="doc doc-heading">
-            <code>IrradianceGraphRequestDTO</code>
+<h3 id="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO" class="doc doc-heading">
+            <code>AreaSummaryRequestDTO</code>
 
 
 </h3>
@@ -794,46 +1071,35 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.area_meter_id">area_meter_id</span></code></td>
             <td>
                   <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>(str) id of the site</p>
+                <p>Unique ID assigned to an area meter.</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.start">start</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.start_datetime">start_datetime</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>(str) start datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
+                <p>datetime in "YYYY-MM-DD HH:MM:SS" ISO format</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.end">end</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryRequestDTO.end_datetime">end_datetime</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>(str) end datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.graph_type">graph_type</span></code></td>
-            <td>
-                  <code><span title="modules.graphing.enums.GraphTypeEnum.GraphTypeEnum">GraphTypeEnum</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>(str) type of graph to display (line, bar)</p>
+                <p>datetime in "YYYY-MM-DD HH:MM:SS" ISO format</p>
               </div>
             </td>
           </tr>
@@ -865,8 +1131,8 @@
 
 
 
-<h3 id="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="doc doc-heading">
-            <code>IrradianceGraphResponseDTO</code>
+<h3 id="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO" class="doc doc-heading">
+            <code>AreaSummaryResponseDTO</code>
 
 
 </h3>
@@ -888,24 +1154,179 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO.data">data</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.type">type</span></code></td>
             <td>
-                  <code>list</code>
+                  <code><span title="typing.Literal">Literal</span>[&#39;virtual&#39;, &#39;physical&#39;]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of graph data</p>
+                
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO.order">order</span></code></td>
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.statistics">statistics</span></code></td>
             <td>
-                  <code>list</code>
+                  <code><a class="autorefs autorefs-internal" title="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO" href="#modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO">AreaSummaryDTO</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>order in which the data appears in the array not counting the first index which is datetime</p>
+                <p>contains total energy and peak power information for the area</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryResponseDTO.tenant_summaries">tenant_summaries</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" href="#modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO">TenantConsumptionDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>List of tenant consumption summaries</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO" class="doc doc-heading">
+            <code>AreaSummaryDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.AreaSummaryDTO.total_energy">total_energy</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Total energy which is the summation of all tenant consumption in kWh</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO" class="doc doc-heading">
+            <code>TenantConsumptionDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.unit">unit</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Name of the tenant unit</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.previous_reading">previous_reading</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Meter reading value at the start datetime</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.tenant_metering.endpoints.area_summary.TenantConsumptionDTO.current_reading">current_reading</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[<span title="decimal.Decimal">Decimal</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Current meter reading value</p>
               </div>
             </td>
           </tr>

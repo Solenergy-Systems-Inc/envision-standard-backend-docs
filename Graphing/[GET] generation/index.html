@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="../%5BGET%5D%20consumption/">
       
-        <link rel="next" href="Core/BaseAuditDTO/">
+      
+        <link rel="next" href="../%5BGET%5D%20irradiance/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Envision Standard</title>
+        <title>[GET] generation - Envision Standard</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -41,11 +43,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-deploy" class="md-skip">
+        <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              [GET] generation
             
           </span>
         </div>
@@ -178,7 +180,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -193,30 +195,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -227,57 +209,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-deploy" class="md-nav__link">
-    <span class="md-ellipsis">
-      How To Deploy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How To Deploy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-add-remote-only-once" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Add Remote [Only Once]
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-deploy" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Deploy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -327,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Core/BaseAuditDTO/" class="md-nav__link">
+      <a href="../../Core/BaseAuditDTO/" class="md-nav__link">
         
   
   
@@ -395,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
+      <a href="../../Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
         
   
   
@@ -422,18 +353,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -449,7 +382,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Graphing
@@ -463,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20charger/" class="md-nav__link">
+      <a href="../%5BGET%5D%20charger/" class="md-nav__link">
         
   
   
@@ -486,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20consumption/" class="md-nav__link">
+      <a href="../%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   
@@ -506,10 +439,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20generation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    [GET] generation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -520,6 +473,72 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GenerationGraphRequestDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GenerationGraphRequestDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTE: if component is an empty string, it means all components are selected
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GenerationGraphResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GenerationGraphResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GenerationGraphStatisticsDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -532,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20irradiance/" class="md-nav__link">
+      <a href="../%5BGET%5D%20irradiance/" class="md-nav__link">
         
   
   
@@ -600,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Monitoring/%5BGET%5D%20meterInfo/" class="md-nav__link">
+      <a href="../../Monitoring/%5BGET%5D%20meterInfo/" class="md-nav__link">
         
   
   
@@ -668,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Standard/%5BPOST%5D%20Login/" class="md-nav__link">
+      <a href="../../Standard/%5BPOST%5D%20Login/" class="md-nav__link">
         
   
   
@@ -691,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
+      <a href="../../Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
         
   
   
@@ -759,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -782,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
         
   
   
@@ -805,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
         
   
   
@@ -828,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -851,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -874,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
         
   
   
@@ -897,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
         
   
   
@@ -920,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -968,28 +987,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-deploy" class="md-nav__link">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      How To Deploy
+      GenerationGraphRequestDTO
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How To Deploy">
+    <nav class="md-nav" aria-label="GenerationGraphRequestDTO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-add-remote-only-once" class="md-nav__link">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Add Remote [Only Once]
+      NOTE: if component is an empty string, it means all components are selected
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#2-deploy" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Deploy
+      GenerationGraphResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GenerationGraphResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GenerationGraphStatisticsDTO
     </span>
   </a>
   
@@ -1016,18 +1050,327 @@
 
 
 
-  <h1>Home</h1>
+  <h1>[GET] generation</h1>
 
-<p>This is hosted in GitHub Pages. Happy Reading.</p>
-<h2 id="how-to-deploy">How To Deploy</h2>
-<p>Only manual deployment is supported. GitHub Pages for private
-repositories is not available for free tier.</p>
-<h3 id="1-add-remote-only-once">1. Add Remote [Only Once]</h3>
-<div class="highlight"><pre><span></span><code>git remote add docs https://github.com/Solenergy-Systems-Inc/envision-standard-backend-docs.git
-</code></pre></div>
-<h3 id="2-deploy">2. Deploy</h3>
-<div class="highlight"><pre><span></span><code>mkdocs gh-deploy -r docs
-</code></pre></div>
+<pre><code>/api/graphs/generation
+</code></pre>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="doc doc-heading">
+            <code>GenerationGraphRequestDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) id of the site</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.start">start</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) start datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.end">end</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) end datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.graph_type">graph_type</span></code></td>
+            <td>
+                  <code><span title="modules.graphing.enums.GraphTypeEnum.GraphTypeEnum">GraphTypeEnum</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) type of graph to display (line, bar)</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.meter_id">meter_id</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[int]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Optional parameter that is passed if the graph required is solar meter vs its inverters otherwise it graphs all solar meters and its total</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+        <h4 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected">NOTE: if component is an empty string, it means all components are selected</h4>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="doc doc-heading">
+            <code>GenerationGraphResponseDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.data">data</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of data points</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.order">order</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the order of the data points</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.statistics">statistics</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO">GenerationGraphStatisticsDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>statistics for the graph</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="doc doc-heading">
+            <code>GenerationGraphStatisticsDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.total_energy">total_energy</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the total energy</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.day_peak_time">day_peak_time</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of datetime values for the day peak</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.day_peak_value">day_peak_value</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the day peak values</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.latest_value">latest_value</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the latest values</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.average_peak">average_peak</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the average peak values</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.max_peak_time">max_peak_time</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of datetime values for the max peak</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.max_peak_value">max_peak_value</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of the max peak values</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
@@ -1076,10 +1419,10 @@ repositories is not available for free tier.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20chargerMeterGraph/">
+        <link rel="prev" href="../../Embedded/%5BGET%5D%20targetDemand/">
       
       
-        <link rel="next" href="../%5BGET%5D%20generationGraph/">
+        <link rel="next" href="../%5BGET%5D%20consumption/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[GET] consumptionGraph - Envision Standard</title>
+        <title>[GET] charger - Envision Standard</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO" class="md-skip">
+        <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] consumptionGraph
+              [GET] charger
             
           </span>
         </div>
@@ -393,29 +393,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BGET%5D%20chargerMeterGraph/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    [GET] chargerMeterGraph
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -431,7 +408,7 @@
   
   
   <span class="md-ellipsis">
-    [GET] consumptionGraph
+    [GET] charger
     
   </span>
   
@@ -444,7 +421,7 @@
   
   
   <span class="md-ellipsis">
-    [GET] consumptionGraph
+    [GET] charger
     
   </span>
   
@@ -465,28 +442,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphRequestDTO
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphResponseDTO
+      ChargerMeterGraphStatisticsDTO
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ConsumptionGraphResponseDTO">
+    <nav class="md-nav" aria-label="ChargerMeterGraphStatisticsDTO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphStatisticsDTO
+      ChargerMeterGraphResponseDTO
     </span>
   </a>
   
@@ -513,12 +490,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20generationGraph/" class="md-nav__link">
+      <a href="../%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] generationGraph
+    [GET] consumption
     
   </span>
   
@@ -536,12 +513,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20irradianceGraph/" class="md-nav__link">
+      <a href="../%5BGET%5D%20generation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] irradianceGraph
+    [GET] generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20irradiance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] irradiance
     
   </span>
   
@@ -718,6 +718,235 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tenant Metering
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tenant Metering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Periods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Tenant Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [PUT] Billing Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -743,28 +972,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphRequestDTO
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphResponseDTO
+      ChargerMeterGraphStatisticsDTO
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ConsumptionGraphResponseDTO">
+    <nav class="md-nav" aria-label="ChargerMeterGraphStatisticsDTO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ConsumptionGraphStatisticsDTO
+      ChargerMeterGraphResponseDTO
     </span>
   </a>
   
@@ -791,9 +1020,9 @@
 
 
 
-  <h1>[GET] consumptionGraph</h1>
+  <h1>[GET] charger</h1>
 
-<pre><code>/api/graphs/consumption
+<pre><code>/api/graphs/charger
 </code></pre>
 
 
@@ -801,8 +1030,8 @@
 
 
 
-<h3 id="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO" class="doc doc-heading">
-            <code>ConsumptionGraphRequestDTO</code>
+<h3 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphRequestDTO</code>
 
 
 </h3>
@@ -824,46 +1053,57 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.site_id">site_id</span></code></td>
             <td>
                   <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>int</p>
+                <p>assigned site id</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO.start">start</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.start">start</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>ISO format datetime</p>
+                <p>start datetime in the format of %Y-%m-%d %H:%M:%S</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO.end">end</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.end">end</span></code></td>
             <td>
                   <code><span title="datetime.datetime">datetime</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>ISO format datetime</p>
+                <p>end datetime in the format of %Y-%m-%d %H:%M:%S</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphRequestDTO.graph_type">graph_type</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.graph_type">graph_type</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>'line' or 'bar'</p>
+                <p>bar or graph</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.user_id">user_id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>id of the user</p>
               </div>
             </td>
           </tr>
@@ -895,8 +1135,8 @@
 
 
 
-<h3 id="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO" class="doc doc-heading">
-            <code>ConsumptionGraphResponseDTO</code>
+<h3 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphStatisticsDTO</code>
 
 
 </h3>
@@ -918,35 +1158,57 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO.consumption_data">consumption_data</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.total_energy">total_energy</span></code></td>
             <td>
                   <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of lists of graph data</p>
+                <p>monthly total energy in kWh</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO.order">order</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.peak_value">peak_value</span></code></td>
             <td>
                   <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of how the graph data and other statistical results are arranged</p>
+                <p>the peak power generated in the given datetime range</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphResponseDTO.statistics">statistics</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.peak_time">peak_time</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO" href="#modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO">ConsumptionGraphStatisticsDTO</a></code>
+                  <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>power or energy statistics based on the date range chosen</p>
+                <p>time of which the peak power occurred</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.load_factor">load_factor</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the average load divided by the peak load in a specified time period</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.latest">latest</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>latest reading from the selected device in kW</p>
               </div>
             </td>
           </tr>
@@ -978,8 +1240,8 @@
 
 
 
-<h4 id="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO" class="doc doc-heading">
-            <code>ConsumptionGraphStatisticsDTO</code>
+<h4 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphResponseDTO</code>
 
 
 </h4>
@@ -1001,57 +1263,36 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO.total_energy">total_energy</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.charger_meter_data">charger_meter_data</span></code></td>
             <td>
                   <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of total energies arranged based on the response's <code>order</code></p>
+                <p>datapoints for the graph</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO.peak_value">peak_value</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.order">order</span></code></td>
             <td>
                   <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of peak values of energy or power depending on the graph type arranged based on the order</p>
+                <p>order of the datapoints in the graph. First index will always be the datetime</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO.peak_time">peak_time</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.statistics">statistics</span></code></td>
             <td>
-                  <code>list</code>
+                  <code><span title="typing.Union">Union</span>[dict, <a class="autorefs autorefs-internal" title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO">ChargerMeterGraphStatisticsDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of datetime values of when the peak occurred. Values are mapped to the peak value list</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO.load_factor">load_factor</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of load factor values arranged based on the order</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.consumption_graph_dto.ConsumptionGraphStatisticsDTO.latest">latest</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of latest energy or power reading arranged based on the order</p>
+                <p>statistics based on the given date range in the format of
+<code>ChargerMeterGraphStatisticsDTO</code></p>
               </div>
             </td>
           </tr>

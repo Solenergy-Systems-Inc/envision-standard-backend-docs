@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20consumptionGraph/">
+        <link rel="prev" href="../%5BGET%5D%20Tenant%20Configuration/">
       
-      
-        <link rel="next" href="../%5BGET%5D%20irradianceGraph/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>[GET] generationGraph - Envision Standard</title>
+        <title>[PUT] Billing Settings - Envision Standard</title>
       
     
     
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-skip">
+        <a href="#modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] generationGraph
+              [PUT] Billing Settings
             
           </span>
         </div>
@@ -353,20 +351,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -382,7 +378,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Graphing
@@ -396,12 +392,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20chargerMeterGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20charger/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] chargerMeterGraph
+    [GET] charger
     
   </span>
   
@@ -419,126 +415,17 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20consumptionGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] consumptionGraph
+    [GET] consumption
     
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    [GET] generationGraph
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    [GET] generationGraph
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GenerationGraphRequestDTO
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GenerationGraphRequestDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected" class="md-nav__link">
-    <span class="md-ellipsis">
-      NOTE: if component is an empty string, it means all components are selected
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GenerationGraphResponseDTO
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GenerationGraphResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GenerationGraphStatisticsDTO
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -551,12 +438,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20irradianceGraph/" class="md-nav__link">
+      <a href="../../Graphing/%5BGET%5D%20generation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [GET] irradianceGraph
+    [GET] generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Graphing/%5BGET%5D%20irradiance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] irradiance
     
   </span>
   
@@ -733,6 +643,284 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tenant Metering
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tenant Metering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Area%20Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Area Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Periods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Billing Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Building Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [GET] Tenant Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    [PUT] Billing Settings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    [PUT] Billing Settings
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      UpdateBillingSettingsRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -758,50 +946,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="md-nav__link">
+  <a href="#modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      GenerationGraphRequestDTO
+      UpdateBillingSettingsRequestDTO
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="GenerationGraphRequestDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected" class="md-nav__link">
-    <span class="md-ellipsis">
-      NOTE: if component is an empty string, it means all components are selected
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GenerationGraphResponseDTO
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GenerationGraphResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GenerationGraphStatisticsDTO
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -821,9 +970,9 @@
 
 
 
-  <h1>[GET] generationGraph</h1>
+  <h1>[PUT] Billing Settings</h1>
 
-<pre><code>/api/graphs/generation
+<pre><code>/api/tenant-metering/billingSettings
 </code></pre>
 
 
@@ -831,8 +980,8 @@
 
 
 
-<h3 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO" class="doc doc-heading">
-            <code>GenerationGraphRequestDTO</code>
+<h3 id="modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO" class="doc doc-heading">
+            <code>UpdateBillingSettingsRequestDTO</code>
 
 
 </h3>
@@ -854,268 +1003,24 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO.site_id">site_id</span></code></td>
             <td>
                   <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>(str) id of the site</p>
+                <p>id of the Site.</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.start">start</span></code></td>
+            <td><code><span title="modules.tenant_metering.services.update_billing_settings.UpdateBillingSettingsRequestDTO.billing_date">billing_date</span></code></td>
             <td>
-                  <code><span title="datetime.datetime">datetime</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>(str) start datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.end">end</span></code></td>
-            <td>
-                  <code><span title="datetime.datetime">datetime</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>(str) end datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.graph_type">graph_type</span></code></td>
-            <td>
-                  <code><span title="modules.graphing.enums.GraphTypeEnum.GraphTypeEnum">GraphTypeEnum</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>(str) type of graph to display (line, bar)</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO.meter_id">meter_id</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[int]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Optional parameter that is passed if the graph required is solar meter vs its inverters otherwise it graphs all solar meters and its total</p>
-              </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-        <h4 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphRequestDTO--note-if-component-is-an-empty-string-it-means-all-components-are-selected">NOTE: if component is an empty string, it means all components are selected</h4>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO" class="doc doc-heading">
-            <code>GenerationGraphResponseDTO</code>
-
-
-</h3>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-<p><span class="doc-section-title">Attributes:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.data">data</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of data points</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.order">order</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the order of the data points</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphResponseDTO.statistics">statistics</span></code></td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" href="#modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO">GenerationGraphStatisticsDTO</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>statistics for the graph</p>
-              </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h4 id="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO" class="doc doc-heading">
-            <code>GenerationGraphStatisticsDTO</code>
-
-
-</h4>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-<p><span class="doc-section-title">Attributes:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.total_energy">total_energy</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the total energy</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.day_peak_time">day_peak_time</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of datetime values for the day peak</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.day_peak_value">day_peak_value</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the day peak values</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.latest_value">latest_value</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the latest values</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.average_peak">average_peak</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the average peak values</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.max_peak_time">max_peak_time</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of datetime values for the max peak</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.graphing.dtos.generation_graph_dto.GenerationGraphStatisticsDTO.max_peak_value">max_peak_value</span></code></td>
-            <td>
-                  <code>list</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>list of the max peak values</p>
+                <p>int (day of the start of billing).</p>
               </div>
             </td>
           </tr>

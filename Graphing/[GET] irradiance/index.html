@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="../%5BGET%5D%20generation/">
       
-        <link rel="next" href="Core/BaseAuditDTO/">
+      
+        <link rel="next" href="../../Monitoring/%5BGET%5D%20meterInfo/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Envision Standard</title>
+        <title>[GET] irradiance - Envision Standard</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -41,11 +43,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-deploy" class="md-skip">
+        <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-header__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              [GET] irradiance
             
           </span>
         </div>
@@ -178,7 +180,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
+    <a href="../.." title="Envision Standard" class="md-nav__button md-logo" aria-label="Envision Standard" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -193,30 +195,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -227,57 +209,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-deploy" class="md-nav__link">
-    <span class="md-ellipsis">
-      How To Deploy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How To Deploy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-add-remote-only-once" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Add Remote [Only Once]
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-deploy" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Deploy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -327,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Core/BaseAuditDTO/" class="md-nav__link">
+      <a href="../../Core/BaseAuditDTO/" class="md-nav__link">
         
   
   
@@ -395,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
+      <a href="../../Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
         
   
   
@@ -422,18 +353,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -449,7 +382,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Graphing
@@ -463,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20charger/" class="md-nav__link">
+      <a href="../%5BGET%5D%20charger/" class="md-nav__link">
         
   
   
@@ -486,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20consumption/" class="md-nav__link">
+      <a href="../%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   
@@ -509,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20generation/" class="md-nav__link">
+      <a href="../%5BGET%5D%20generation/" class="md-nav__link">
         
   
   
@@ -529,10 +462,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Graphing/%5BGET%5D%20irradiance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    [GET] irradiance
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -543,6 +496,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      IrradianceGraphRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      IrradianceGraphResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -600,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Monitoring/%5BGET%5D%20meterInfo/" class="md-nav__link">
+      <a href="../../Monitoring/%5BGET%5D%20meterInfo/" class="md-nav__link">
         
   
   
@@ -668,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Standard/%5BPOST%5D%20Login/" class="md-nav__link">
+      <a href="../../Standard/%5BPOST%5D%20Login/" class="md-nav__link">
         
   
   
@@ -691,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
+      <a href="../../Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
         
   
   
@@ -759,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -782,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
         
   
   
@@ -805,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
         
   
   
@@ -828,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -851,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -874,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
         
   
   
@@ -897,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
         
   
   
@@ -920,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -968,35 +957,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-deploy" class="md-nav__link">
+  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      How To Deploy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How To Deploy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-add-remote-only-once" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Add Remote [Only Once]
+      IrradianceGraphRequestDTO
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-deploy" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Deploy
+      IrradianceGraphResponseDTO
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1016,18 +990,177 @@
 
 
 
-  <h1>Home</h1>
+  <h1>[GET] irradiance</h1>
 
-<p>This is hosted in GitHub Pages. Happy Reading.</p>
-<h2 id="how-to-deploy">How To Deploy</h2>
-<p>Only manual deployment is supported. GitHub Pages for private
-repositories is not available for free tier.</p>
-<h3 id="1-add-remote-only-once">1. Add Remote [Only Once]</h3>
-<div class="highlight"><pre><span></span><code>git remote add docs https://github.com/Solenergy-Systems-Inc/envision-standard-backend-docs.git
-</code></pre></div>
-<h3 id="2-deploy">2. Deploy</h3>
-<div class="highlight"><pre><span></span><code>mkdocs gh-deploy -r docs
-</code></pre></div>
+<pre><code>/api/graphs/irradiance
+</code></pre>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO" class="doc doc-heading">
+            <code>IrradianceGraphRequestDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) id of the site</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.start">start</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) start datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.end">end</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) end datetime in the format "YYYY-MM-DD HH:MM:SS"</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphRequestDTO.graph_type">graph_type</span></code></td>
+            <td>
+                  <code><span title="modules.graphing.enums.GraphTypeEnum.GraphTypeEnum">GraphTypeEnum</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>(str) type of graph to display (line, bar)</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO" class="doc doc-heading">
+            <code>IrradianceGraphResponseDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO.data">data</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of graph data</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.irradiance_graph_dto.IrradianceGraphResponseDTO.order">order</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>order in which the data appears in the array not counting the first index which is datetime</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
@@ -1076,10 +1209,10 @@ repositories is not available for free tier.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
