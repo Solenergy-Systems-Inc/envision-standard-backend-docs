@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../EV/%5BGET%5D%20chargerMeterGraph/">
+        <link rel="prev" href="../../Embedded/%5BGET%5D%20targetDemand/">
       
       
-        <link rel="next" href="../Transactions%20Summary/">
+        <link rel="next" href="../%5BGET%5D%20consumption/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Ongoing Transactions - Envision Standard</title>
+        <title>[GET] charger - Envision Standard</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get-transactionsongoing" class="md-skip">
+        <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ongoing Transactions
+              [GET] charger
             
           </span>
         </div>
@@ -292,7 +292,7 @@
             
   
   <span class="md-ellipsis">
-    EV
+    Embedded
   </span>
   
 
@@ -302,7 +302,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            EV
+            Embedded
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -313,11 +313,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../EV/%5BGET%5D%20chargerMeterGraph/" class="md-nav__link">
+      <a href="../../Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [GET] chargerMeterGraph
+    [GET] targetDemand
   </span>
   
 
@@ -357,7 +357,7 @@
             
   
   <span class="md-ellipsis">
-    EVCS Manager
+    Graphing
   </span>
   
 
@@ -367,7 +367,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            EVCS Manager
+            Graphing
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -389,7 +389,7 @@
           
   
   <span class="md-ellipsis">
-    Ongoing Transactions
+    [GET] charger
   </span>
   
 
@@ -400,7 +400,7 @@
         
   
   <span class="md-ellipsis">
-    Ongoing Transactions
+    [GET] charger
   </span>
   
 
@@ -420,54 +420,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-transactionsongoing" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      [GET] transactions/ongoing
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="[GET] transactions/ongoing">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerMeterGraphStatisticsDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChargerMeterGraphStatisticsDTO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.OngoingTransactionsRequestDTO.OngoingTransactionsRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      OngoingTransactionsRequestDTO
+      ChargerMeterGraphResponseDTO
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.OngoingTransactionsResponseDTO.OngoingTransactionsResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      OngoingTransactionsResponseDTO
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OngoingTransactionsResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      TransactionDTO
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -492,11 +468,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../Transactions%20Summary/" class="md-nav__link">
+      <a href="../%5BGET%5D%20consumption/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Transactions Summary
+    [GET] consumption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20irradiance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] irradiance
   </span>
   
 
@@ -534,7 +552,7 @@
             
   
   <span class="md-ellipsis">
-    Embedded
+    Monitoring
   </span>
   
 
@@ -543,69 +561,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Embedded
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Embedded/%5BGET%5D%20targetDemand/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] targetDemand
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Monitoring
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Monitoring
           </label>
@@ -653,220 +608,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Standard
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Standard
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Standard/%5BPOST%5D%20Login/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] Login
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Standard/%5BPOST%5D%20siteImage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] siteImage
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Technical Support
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Technical Support
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Technical%20Support/New%20Support%20Ticket/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    New Support Ticket
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Technical%20Support/Sending%20Replies%20to%20Tickets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sending Replies to Tickets
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Technical%20Support/Support%20Ticket%20List/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Support Ticket List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Technical%20Support/Ticket%20Details/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Ticket Details
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -877,8 +622,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Tenant Metering
           </label>
@@ -1080,6 +825,111 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            User
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/%5BGET%5D%20registeredSites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] registeredSites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/%5BPOST%5D%20Login/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] Login
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/%5BPOST%5D%20siteImage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] siteImage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1105,54 +955,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-transactionsongoing" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      [GET] transactions/ongoing
+      ChargerMeterGraphRequestDTO
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="[GET] transactions/ongoing">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerMeterGraphStatisticsDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChargerMeterGraphStatisticsDTO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.OngoingTransactionsRequestDTO.OngoingTransactionsRequestDTO" class="md-nav__link">
+  <a href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      OngoingTransactionsRequestDTO
+      ChargerMeterGraphResponseDTO
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.OngoingTransactionsResponseDTO.OngoingTransactionsResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      OngoingTransactionsResponseDTO
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OngoingTransactionsResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      TransactionDTO
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1176,10 +1002,9 @@
                   
 
 
-  <h1>Ongoing Transactions</h1>
+  <h1>[GET] charger</h1>
 
-<h2 id="get-transactionsongoing">[GET] transactions/ongoing</h2>
-<pre><code>/api/transactions/ongoing
+<pre><code>/api/graphs/charger
 </code></pre>
 
 
@@ -1187,8 +1012,8 @@
 
 
 
-<h3 id="modules.evcs_manager.dtos.OngoingTransactionsRequestDTO.OngoingTransactionsRequestDTO" class="doc doc-heading">
-            <code>OngoingTransactionsRequestDTO</code>
+<h3 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphRequestDTO</code>
 
 
 </h3>
@@ -1210,13 +1035,46 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.OngoingTransactionsRequestDTO.OngoingTransactionsRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>assigned site id</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.start">start</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>start datetime in the format of %Y-%m-%d %H:%M:%S</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.end">end</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>end datetime in the format of %Y-%m-%d %H:%M:%S</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphRequestDTO.graph_type">graph_type</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>site id of the ongoing transactions</p>
+                <p>bar or graph</p>
               </div>
             </td>
           </tr>
@@ -1248,8 +1106,8 @@
 
 
 
-<h3 id="modules.evcs_manager.dtos.OngoingTransactionsResponseDTO.OngoingTransactionsResponseDTO" class="doc doc-heading">
-            <code>OngoingTransactionsResponseDTO</code>
+<h3 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphStatisticsDTO</code>
 
 
 </h3>
@@ -1271,13 +1129,57 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.OngoingTransactionsResponseDTO.OngoingTransactionsResponseDTO.transactions">transactions</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.total_energy">total_energy</span></code></td>
             <td>
                   <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>list of ongoing transactions of type <code>TransactionDTO</code></p>
+                <p>monthly total energy in kWh</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.peak_value">peak_value</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the peak power generated in the given datetime range</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.peak_time">peak_time</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>time of which the peak power occurred</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.load_factor">load_factor</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the average load divided by the peak load in a specified time period</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO.latest">latest</span></code></td>
+            <td>
+                  <code>list</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>latest reading from the selected device in kW</p>
               </div>
             </td>
           </tr>
@@ -1309,8 +1211,8 @@
 
 
 
-<h4 id="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO" class="doc doc-heading">
-            <code>TransactionDTO</code>
+<h4 id="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO" class="doc doc-heading">
+            <code>ChargerMeterGraphResponseDTO</code>
 
 
 </h4>
@@ -1332,123 +1234,36 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.reference_num">reference_num</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.charger_meter_data">charger_meter_data</span></code></td>
             <td>
-                  <code>str</code>
+                  <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>transaction id</p>
+                <p>datapoints for the graph</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.start_date">start_date</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.order">order</span></code></td>
             <td>
-                  <code>str</code>
+                  <code>list</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>start date of the transaction in the format of 'YYYY-MM-DD HH:MM:SS'</p>
+                <p>order of the datapoints in the graph. First index will always be the datetime</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.charger_name">charger_name</span></code></td>
+            <td><code><span title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphResponseDTO.statistics">statistics</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><span title="typing.Union">Union</span>[dict, <a class="autorefs autorefs-internal" title="modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO" href="#modules.graphing.dtos.charger_meter_graph_dto.ChargerMeterGraphStatisticsDTO">ChargerMeterGraphStatisticsDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>charger used for the transaction</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.location">location</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>location of the transaction</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.demand">demand</span></code></td>
-            <td>
-                  <code>float</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>kWh consumed during charging session</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.driver">driver</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>name of the driver</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.duration">duration</span></code></td>
-            <td>
-                  <code>float</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>duration of the charging session in hours</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.email">email</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>email of the driver</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.payment_amount">payment_amount</span></code></td>
-            <td>
-                  <code>float</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>payment amount in PHP</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.payment_method">payment_method</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>payment method used</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.evcs_manager.dtos.TransactionsSummaryResponseDTO.TransactionDTO.conn_type">conn_type</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>type of the connector used for the charging session</p>
+                <p>statistics based on the given date range in the format of
+<code>ChargerMeterGraphStatisticsDTO</code></p>
               </div>
             </td>
           </tr>
@@ -1474,12 +1289,7 @@
 
     </div>
 
-</div><h4 id="notes">Notes:</h4>
-<ul>
-<li>Ongoing transactions will not have <code>payment_amount</code> associated with them.</li>
-<li>The <code>payment_method</code> should still reflect what the user selected upon starting a charging session</li>
-<li>The <code>duration</code> parameter will be continuously updated upon request.</li>
-</ul>
+</div>
 
 
 
