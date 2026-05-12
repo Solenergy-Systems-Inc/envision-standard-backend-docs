@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20Area%20Summary/">
+        <link rel="prev" href="../../Standard/%5BPOST%5D%20siteImage/">
       
       
-        <link rel="next" href="../%5BGET%5D%20Billing%20Settings/">
+        <link rel="next" href="../Sending%20Replies%20to%20Tickets/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>[GET] Billing Periods - Envision Standard</title>
+        <title>New Support Ticket - Envision Standard</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.tenant_metering.endpoints.billing_period.GetBillingPeriodRequestDTO" class="md-skip">
+        <a href="#post-createticket" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] Billing Periods
+              New Support Ticket
             
           </span>
         </div>
@@ -1162,18 +1162,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1194,7 +1196,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1209,10 +1211,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Technical%20Support/New%20Support%20Ticket/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Support Ticket
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1228,6 +1255,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post-createticket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [POST] createTicket
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[POST] createTicket">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreateTicketRequestDTO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreateTicketResponseDTO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1240,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Technical%20Support/Sending%20Replies%20to%20Tickets/" class="md-nav__link">
+      <a href="../Sending%20Replies%20to%20Tickets/" class="md-nav__link">
         
   
   
@@ -1268,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Technical%20Support/Support%20Ticket%20List/" class="md-nav__link">
+      <a href="../Support%20Ticket%20List/" class="md-nav__link">
         
   
   
@@ -1296,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Technical%20Support/Ticket%20Details/" class="md-nav__link">
+      <a href="../Ticket%20Details/" class="md-nav__link">
         
   
   
@@ -1328,20 +1423,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -1362,7 +1455,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1380,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -1408,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Area%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Area%20Summary/" class="md-nav__link">
         
   
   
@@ -1433,35 +1526,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    [GET] Billing Periods
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Periods/" class="md-nav__link">
         
   
   
@@ -1477,57 +1545,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.GetBillingPeriodRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GetBillingPeriodRequestDTO
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.GetBillingPeriodResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GetBillingPeriodResponseDTO
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.BillingDateDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BillingDateDTO
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1540,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -1568,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Building%20Report/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Report/" class="md-nav__link">
         
   
   
@@ -1596,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary%20CSV/" class="md-nav__link">
         
   
   
@@ -1624,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Building%20Summary/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Building%20Summary/" class="md-nav__link">
         
   
   
@@ -1652,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BGET%5D%20Tenant%20Configuration/" class="md-nav__link">
         
   
   
@@ -1680,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
+      <a href="../../Tenant%20Metering/%5BPUT%5D%20Billing%20Settings/" class="md-nav__link">
         
   
   
@@ -1733,35 +1750,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.GetBillingPeriodRequestDTO" class="md-nav__link">
+  <a href="#post-createticket" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GetBillingPeriodRequestDTO
+        [POST] createTicket
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[POST] createTicket">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreateTicketRequestDTO
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.GetBillingPeriodResponseDTO" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GetBillingPeriodResponseDTO
+        CreateTicketResponseDTO
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.tenant_metering.endpoints.billing_period.BillingDateDTO" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        BillingDateDTO
+        Notes
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1782,9 +1816,11 @@
 
 
 
-  <h1>[GET] Billing Periods</h1>
+  <h1>New Support Ticket</h1>
 
-<pre><code>/api/tenant-metering/billingPeriods
+<p><img alt="" src="../New%20Support%20Ticket.png" /></p>
+<h2 id="post-createticket">[POST] createTicket</h2>
+<pre><code>/api/technicalSupport/createTicket
 </code></pre>
 
 
@@ -1792,8 +1828,8 @@
 
 
 
-<h3 id="modules.tenant_metering.endpoints.billing_period.GetBillingPeriodRequestDTO" class="doc doc-heading">
-            <code>GetBillingPeriodRequestDTO</code>
+<h3 id="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO" class="doc doc-heading">
+            <code>CreateTicketRequestDTO</code>
 
 
 </h3>
@@ -1815,13 +1851,46 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.billing_period.GetBillingPeriodRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO.title">title</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Ticket title</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO.location_id">location_id</span></code></td>
             <td>
                   <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>id of the Site.</p>
+                <p>Site ID</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO.details">details</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>problem description</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketRequestDTO.files">files</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[<span title="typing.List">List</span>[object]]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of files associated with a<code>filename</code> field</p>
               </div>
             </td>
           </tr>
@@ -1853,8 +1922,8 @@
 
 
 
-<h3 id="modules.tenant_metering.endpoints.billing_period.GetBillingPeriodResponseDTO" class="doc doc-heading">
-            <code>GetBillingPeriodResponseDTO</code>
+<h3 id="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketResponseDTO" class="doc doc-heading">
+            <code>CreateTicketResponseDTO</code>
 
 
 </h3>
@@ -1876,13 +1945,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.billing_period.GetBillingPeriodResponseDTO.periods">periods</span></code></td>
+            <td><code><span title="modules.technical_support.__.dtos.CreateTicketDTO.CreateTicketResponseDTO.ticket_id">ticket_id</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.tenant_metering.endpoints.billing_period.BillingDateDTO" href="#modules.tenant_metering.endpoints.billing_period.BillingDateDTO">BillingDateDTO</a>]</code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of billing periods/dates.</p>
+                
               </div>
             </td>
           </tr>
@@ -1908,79 +1977,10 @@
 
     </div>
 
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="modules.tenant_metering.endpoints.billing_period.BillingDateDTO" class="doc doc-heading">
-            <code>BillingDateDTO</code>
-
-
-</h2>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-<p><span class="doc-section-title">Attributes:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.billing_period.BillingDateDTO.start_date">start_date</span></code></td>
-            <td>
-                  <code><span title="datetime.date">date</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Start of billing.</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.tenant_metering.endpoints.billing_period.BillingDateDTO.end_date">end_date</span></code></td>
-            <td>
-                  <code><span title="datetime.date">date</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>End of billing.</p>
-              </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
+</div><h3 id="notes">Notes</h3>
+<ul>
+<li>Uploading of files will be added in the future.</li>
+</ul>
 
 
 
