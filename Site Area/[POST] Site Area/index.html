@@ -2018,6 +2018,17 @@ created when this is <code>True</code></p>
               </div>
             </td>
           </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO.device_name">device_name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>name to rename the Device to</p>
+              </div>
+            </td>
+          </tr>
       </tbody>
     </table>
 
@@ -2054,6 +2065,8 @@ created when this is <code>True</code></p>
 <li><code>submetering_units</code> is ignored (no rows are created) unless <code>submetering_enabled</code> is <code>True</code>.</li>
 <li>Equipment <code>devices</code> reference existing Devices by <code>device_id</code> - a device is not created by this endpoint, it
   must already exist (e.g. provisioned via <code>scripts/add_device.py</code>) before it can be attached to an Equipment Group.</li>
+<li>Each equipment device's <code>device_name</code> renames that Device (its <code>name</code> column is overwritten) - it does not
+  create a new Device. <code>type</code> and <code>serial_number</code> are not accepted here; they come from the existing Device row.</li>
 <li>Anything that is type hinted as <code>Decimal</code> will be parsed as <code>String</code>.</li>
 </ul>
 

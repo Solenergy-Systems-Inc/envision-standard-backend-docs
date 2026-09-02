@@ -2046,6 +2046,17 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
               </div>
             </td>
           </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO.device_name">device_name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>name to rename the Device to</p>
+              </div>
+            </td>
+          </tr>
       </tbody>
     </table>
 
@@ -2093,6 +2104,9 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
   attached but omitted from <code>devices</code> is detached and freed (its <code>site_area_id</code> and <code>equipment_group_id</code>
   are cleared, so it shows up again in <code>[GET] Site Devices</code>). There is no way to remove a Submetering Unit
   or an Equipment Group itself through this endpoint.</li>
+<li>Each equipment device's <code>device_name</code> renames that Device (its <code>name</code> column is overwritten), for both newly
+  attached and already-attached devices. <code>type</code> and <code>serial_number</code> are not accepted here; they come from the
+  existing Device row.</li>
 <li><code>submetering_units</code> without an <code>id</code> are ignored (no rows are created) unless <code>submetering_enabled</code> is
   <code>True</code>; edits to an existing Submetering Unit (item <strong>with</strong> an <code>id</code>) are always applied regardless of
   <code>submetering_enabled</code>.</li>
