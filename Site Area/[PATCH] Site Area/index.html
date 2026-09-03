@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -1664,7 +1664,6 @@
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1678,7 +1677,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.id">id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1689,7 +1688,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.site_id">site_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1744,7 +1743,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.primary_meter_id">primary_meter_id</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
+                  <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1756,7 +1755,7 @@ unchanged if omitted</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.submetering_enabled">submetering_enabled</span></code></td>
             <td>
-                  <code><span title="bool">bool</span></code>
+                  <code>bool</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1768,24 +1767,30 @@ only created when this is <code>True</code>; edits to existing ones are always a
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.submetering_units">submetering_units</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="UpdateSubmeterDTO (modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO)" href="#modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO">UpdateSubmeterDTO</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO" href="#modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO">UpdateSubmeterDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List[UpdateSubmeterDTO]. Items with an <code>id</code> edit that existing Submetering Unit;
-items without one create a new Submetering Unit</p>
+                <p>List[UpdateSubmeterDTO] representing the complete desired set of Submetering Units for
+this Site Area. Items with an <code>id</code> edit that existing Submetering Unit; items without one create a
+new Submetering Unit; any existing Submetering Unit whose <code>id</code> is omitted from this list is
+unassigned (its meter Device's <code>site_area_id</code> is cleared, so it becomes available again via
+<code>site_devices</code>) and then hard-deleted</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSiteAreaRequestDTO.equipment_groups">equipment_groups</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="UpdateEquipmentGroupDTO (modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO)" href="#modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO">UpdateEquipmentGroupDTO</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO" href="#modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO">UpdateEquipmentGroupDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List[UpdateEquipmentGroupDTO]. Items with an <code>id</code> edit that existing Equipment Group
-(its <code>devices</code> are added to the group, never removed); items without one create a new Equipment Group</p>
+                <p>List[UpdateEquipmentGroupDTO] representing the complete desired set of Equipment Groups
+for this Site Area. Items with an <code>id</code> edit that existing Equipment Group; items without one create
+a new Equipment Group; any existing Equipment Group whose <code>id</code> is omitted from this list has its
+Devices unassigned (their <code>site_area_id</code> and <code>equipment_group_id</code> are cleared, so they become
+available again via <code>site_devices</code>) and is then hard-deleted</p>
               </div>
             </td>
           </tr>
@@ -1795,15 +1800,7 @@ items without one create a new Submetering Unit</p>
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1837,7 +1834,6 @@ items without one create a new Submetering Unit</p>
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1851,7 +1847,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO.id">id</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
+                  <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1862,7 +1858,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO.unit_name">unit_name</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1873,7 +1869,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateSubmeterDTO.meter_id">meter_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1887,15 +1883,7 @@ items without one create a new Submetering Unit</p>
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1929,7 +1917,6 @@ items without one create a new Submetering Unit</p>
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1943,7 +1930,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO.id">id</span></code></td>
             <td>
-                  <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
+                  <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1954,7 +1941,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO.name">name</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1965,7 +1952,7 @@ items without one create a new Submetering Unit</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.endpoints.update_site_area.UpdateEquipmentGroupDTO.devices">devices</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="EquipmentDeviceIdDTO (modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO)" href="#modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO">EquipmentDeviceIdDTO</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO" href="#modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO">EquipmentDeviceIdDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1982,15 +1969,7 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -2024,7 +2003,6 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -2038,7 +2016,7 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO.device_id">device_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2049,7 +2027,7 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
           <tr class="doc-section-item">
             <td><code><span title="modules.site_area.dto.equipment_group_dto.EquipmentDeviceIdDTO.device_name">device_name</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2063,15 +2041,7 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -2164,7 +2134,7 @@ and <code>equipment_group_id</code> are cleared, so it becomes available again v
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
