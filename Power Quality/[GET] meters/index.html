@@ -1386,6 +1386,7 @@
 
 </div><p>Note: meters that will be displayed will be type <strong>consumption</strong> and <strong>includes_harmonic_readings</strong> as True.</p>
 <p>Throws <code>NO_HARMONIC_DEVICES</code> otherwise</p>
+<p>Returns <code>MonitoringPointsResponseDTO</code></p>
 
 
 <div class="doc doc-object doc-class">
@@ -1402,6 +1403,32 @@
     <div class="doc doc-contents first">
 
 
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.monitoring_points_dto.MonitoringPointsResponseDTO.meters">meters</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="MonitoringPointDTO (modules.power_quality.dtos.monitoring_points_dto.MonitoringPointDTO)" href="#modules.power_quality.dtos.monitoring_points_dto.MonitoringPointDTO">MonitoringPointDTO</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of MonitoringPointsDTO</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
 
@@ -1449,6 +1476,43 @@
 
 
 
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.monitoring_points_dto.MonitoringPointDTO.id">id</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>meter_id as int</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.monitoring_points_dto.MonitoringPointDTO.name">name</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>name of the meter</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
 
 
 
@@ -1474,7 +1538,7 @@
 
     </div>
 
-</div>
+</div><p>Endpoint specs derived from the Power Quality Taiga WIKI</p>
 
 
 
