@@ -798,6 +798,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Response
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1421,6 +1443,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Response
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1437,8 +1481,6 @@
                   
 
 
-
-  <h1>[GET] harmonic days</h1>
 
 <pre><code>api/power-quality/harmonics/day
 </code></pre>
@@ -1830,7 +1872,25 @@ all endpoints run by the same metrics analyzer class at the back-end</p>
 
     </div>
 
-</div>
+</div><h1 id="sample-request">Sample Request</h1>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"meter_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-01 00:00:00"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-12 23:59:59"</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<h1 id="sample-response">Sample Response</h1>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"anomaly_days"</span><span class="p">:[</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">"date"</span><span class="p">:</span><span class="s2">"2026-10-06"</span><span class="p">,</span><span class="nt">"types"</span><span class="p">:[</span><span class="s2">"current"</span><span class="p">]},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">"date"</span><span class="p">:</span><span class="s2">"2026-10-07"</span><span class="p">,</span><span class="nt">"types"</span><span class="p">:[</span><span class="s2">"current"</span><span class="p">]},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">"date"</span><span class="p">:</span><span class="s2">"2026-10-08"</span><span class="p">,</span><span class="nt">"types"</span><span class="p">:[</span><span class="s2">"current"</span><span class="p">]},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">"date"</span><span class="p">:</span><span class="s2">"2026-10-12"</span><span class="p">,</span><span class="nt">"types"</span><span class="p">:[</span><span class="s2">"current"</span><span class="p">]}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
 
 
 
