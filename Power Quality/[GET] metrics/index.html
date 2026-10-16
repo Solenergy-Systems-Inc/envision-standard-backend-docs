@@ -793,6 +793,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Response
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1299,6 +1321,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample Response
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1315,8 +1359,6 @@
                   
 
 
-
-  <h1>[GET] metrics</h1>
 
 <pre><code>/api/power-quality/metrics
 </code></pre>
@@ -1555,6 +1597,26 @@ at the start and `23:59:59' at the end would ensure a proper start and end date<
 </code></pre></div>
 <p><code>Optional[float]</code> is returned. You may receive null as a metric value. Computations mostly follow the taiga wiki,
 information about it will not be included in this wiki docs.</p>
+<h1 id="sample-request">Sample Request</h1>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"queryStringParameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"meter_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-01 00:00:00"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-12 23:59:59"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<h1 id="sample-response">Sample Response</h1>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"power_factor"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"frequency"</span><span class="p">:</span><span class="mf">59.97</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"voltage_thd"</span><span class="p">:</span><span class="mf">0.69</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"current_tdd"</span><span class="p">:</span><span class="mf">6.86</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"voltage_unbalance"</span><span class="p">:</span><span class="mf">0.85</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
