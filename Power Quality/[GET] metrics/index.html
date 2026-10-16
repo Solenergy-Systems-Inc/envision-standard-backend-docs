@@ -688,6 +688,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../%5BGET%5D%20issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%5BGET%5D%20meters/" class="md-nav__link">
         
   
@@ -787,6 +815,17 @@
     <span class="md-ellipsis">
       
         MetricEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.phase_enum.PhaseEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PhaseEnum
       
     </span>
   </a>
@@ -1322,6 +1361,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.phase_enum.PhaseEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PhaseEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sample-request" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1416,7 +1466,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.metrics_dto.MetricsRequestDTO.phase">phase</span></code></td>
             <td>
-                  <code><span title="modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</span></code>
+                  <code><a class="autorefs autorefs-internal" title="PhaseEnum (modules.power_quality.enums.phase_enum.PhaseEnum)" href="#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1597,6 +1647,107 @@ at the start and `23:59:59' at the end would ensure a proper start and end date<
 </code></pre></div>
 <p><code>Optional[float]</code> is returned. You may receive null as a metric value. Computations mostly follow the taiga wiki,
 information about it will not be included in this wiki docs.</p>
+<p>Phase on the request follows the defined enum</p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.enums.phase_enum.PhaseEnum" class="doc doc-heading">
+            <code>PhaseEnum</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.ALL">ALL</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>all</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.A">A</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only a</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.B">B</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only b</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.C">C</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only c</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>if an invalid value is passed it may throw a generic error, not defined at the back-end.</p>
 <h1 id="sample-request">Sample Request</h1>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">"queryStringParameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
