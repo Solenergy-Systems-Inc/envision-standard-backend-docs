@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -690,6 +695,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] harmonic days
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -706,6 +729,78 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HarmonicDaysRequestDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.phase_enum.PhaseEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PhaseEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnomalyDayDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.type_enum.TypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HarmonicDaysResponseDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1265,6 +1360,69 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HarmonicDaysRequestDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.phase_enum.PhaseEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PhaseEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnomalyDayDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.enums.type_enum.TypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeEnum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HarmonicDaysResponseDTO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1284,6 +1442,395 @@
 
 <pre><code>api/power-quality/harmonics/day
 </code></pre>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO" class="doc doc-heading">
+            <code>HarmonicDaysRequestDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>site id as int</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO.meter_id">meter_id</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>meter id as int</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO.phase">phase</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PhaseEnum (modules.power_quality.enums.phase_enum.PhaseEnum)" href="#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>element of PhaseEnum</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO.start_date">start_date</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>datetime (YYYY-MM-DD HH:MM:SS)</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysRequestDTO.end_date">end_date</span></code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>datetime (YYYY-MM-DD HH:MM:SS)</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>start and end date should have a time appended <code>00:00:00</code> and <code>23:59:59</code> respectively
+follows the enum conventions of phase</p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.enums.phase_enum.PhaseEnum" class="doc doc-heading">
+            <code>PhaseEnum</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.ALL">ALL</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>all</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.A">A</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only a</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.B">B</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only b</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.enums.phase_enum.PhaseEnum.C">C</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>only c</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Follows the taiga wiki. This endpoint is very similar with the issues endpoint
+The same metric over/under limit is still done but the return shape is smaller</p>
+<p>Which means this endpoint <code>/harmonics/day</code> can be seen as a simpler return shape of <code>/issues</code>, which is then a by-day computation of <code>/metrics</code>
+all endpoints run by the same metrics analyzer class at the back-end</p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO" class="doc doc-heading">
+            <code>AnomalyDayDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO.date">date</span></code></td>
+            <td>
+                  <code><span title="modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO.date">date</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>date (YYYY-MM-DD)</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.power_quality.dtos.harmonic_days_dto.AnomalyDayDTO.types">types</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="TypeEnum (modules.power_quality.enums.type_enum.TypeEnum)" href="#modules.power_quality.enums.type_enum.TypeEnum">TypeEnum</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>a list of TypeEnums, could be only three: ['voltage'], ['current'], ['voltage', 'current']</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.enums.type_enum.TypeEnum" class="doc doc-heading">
+            <code>TypeEnum</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.power_quality.dtos.harmonic_days_dto.HarmonicDaysResponseDTO" class="doc doc-heading">
+            <code>HarmonicDaysResponseDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
