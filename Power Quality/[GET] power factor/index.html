@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -596,6 +596,62 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Monitoring/%5BGET%5D%20electricalParamsCsv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] electricalParamsCsv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Monitoring/%5BGET%5D%20harmonicDistortionsCsv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] harmonicDistortionsCsv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1542,7 +1598,6 @@
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1556,7 +1611,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.power_factor_dto.PowerFactorRequestDTO.site_id">site_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1567,7 +1622,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.power_factor_dto.PowerFactorRequestDTO.meter_id">meter_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1578,7 +1633,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.power_factor_dto.PowerFactorRequestDTO.phase">phase</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="PhaseEnum (modules.power_quality.enums.phase_enum.PhaseEnum)" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
+                  <code><a class="autorefs autorefs-internal" title="modules.power_quality.enums.phase_enum.PhaseEnum" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1614,15 +1669,7 @@
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1657,7 +1704,6 @@
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1682,7 +1728,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.power_factor_dto.DataPointDTO.value">value</span></code></td>
             <td>
-                  <code><span title="float">float</span></code>
+                  <code>float</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1696,15 +1742,7 @@
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1722,9 +1760,9 @@
 
 </div><p>the <code>value</code> is calculated from the taiga wiki formula based on these columns:</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">PHASE_COLUMNS</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">"a"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"kwa"</span><span class="p">,</span> <span class="s2">"va"</span><span class="p">,</span> <span class="s2">"ia"</span><span class="p">),</span>
-        <span class="s2">"b"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"kwb"</span><span class="p">,</span> <span class="s2">"vb"</span><span class="p">,</span> <span class="s2">"ib"</span><span class="p">),</span>
-        <span class="s2">"c"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"kwc"</span><span class="p">,</span> <span class="s2">"vc"</span><span class="p">,</span> <span class="s2">"ic"</span><span class="p">),</span>
+        <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;kwa&quot;</span><span class="p">,</span> <span class="s2">&quot;va&quot;</span><span class="p">,</span> <span class="s2">&quot;ia&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;kwb&quot;</span><span class="p">,</span> <span class="s2">&quot;vb&quot;</span><span class="p">,</span> <span class="s2">&quot;ib&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;kwc&quot;</span><span class="p">,</span> <span class="s2">&quot;vc&quot;</span><span class="p">,</span> <span class="s2">&quot;ic&quot;</span><span class="p">),</span>
     <span class="p">}</span>
 </code></pre></div>
 <p>Columns are chosen from the inputted phase</p>
@@ -1753,7 +1791,6 @@
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1767,7 +1804,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.power_factor_dto.PowerFactorResponseDTO.data">data</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="DataPointDTO (modules.power_quality.dtos.power_factor_dto.DataPointDTO)" href="#modules.power_quality.dtos.power_factor_dto.DataPointDTO">DataPointDTO</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.power_quality.dtos.power_factor_dto.DataPointDTO" href="#modules.power_quality.dtos.power_factor_dto.DataPointDTO">DataPointDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1781,15 +1818,7 @@
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1809,28 +1838,28 @@
 could be 5 minute, 15 minute, 1 hour, or daily, depending on the parameters set</p>
 <h1 id="sample-request">Sample Request</h1>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"meter_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-01 00:00:00"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-12 23:59:59"</span>
+<span class="w">    </span><span class="nt">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;meter_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;phase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;start_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-01 00:00:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;end_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-12 23:59:59&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <h1 id="sample-response">Sample Response</h1>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">"data"</span><span class="p">:[</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-01T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-02T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-03T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-04T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-05T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-06T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-07T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-08T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-09T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-10T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-11T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span><span class="nt">"timestamp"</span><span class="p">:</span><span class="s2">"2026-10-12T00:00:00"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">}</span>
+<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:[</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-01T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-02T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-03T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-04T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-05T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-06T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-07T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-08T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-09T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-10T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-11T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-12T00:00:00&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">}</span>
 <span class="w">    </span><span class="p">]</span>
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
@@ -1886,7 +1915,7 @@ could be 5 minute, 15 minute, 1 hour, or daily, depending on the parameters set<
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

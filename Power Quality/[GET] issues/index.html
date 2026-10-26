@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -596,6 +596,62 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Monitoring/%5BGET%5D%20electricalParamsCsv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] electricalParamsCsv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Monitoring/%5BGET%5D%20harmonicDistortionsCsv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [GET] harmonicDistortionsCsv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1564,7 +1620,6 @@
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1578,7 +1633,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssuesRequestDTO.site_id">site_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1614,15 +1669,7 @@
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1659,7 +1706,6 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1673,7 +1719,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.id">id</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1684,7 +1730,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.meter_id">meter_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1695,7 +1741,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.metric">metric</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="MetricEnum (modules.power_quality.enums.metrics_enum.MetricEnum)" href="../%5BGET%5D%20metrics/#modules.power_quality.enums.metrics_enum.MetricEnum">MetricEnum</a></code>
+                  <code><a class="autorefs autorefs-internal" title="modules.power_quality.enums.metrics_enum.MetricEnum" href="../%5BGET%5D%20metrics/#modules.power_quality.enums.metrics_enum.MetricEnum">MetricEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1706,7 +1752,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.phase">phase</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="PhaseEnum (modules.power_quality.enums.phase_enum.PhaseEnum)" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
+                  <code><a class="autorefs autorefs-internal" title="modules.power_quality.enums.phase_enum.PhaseEnum" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1717,7 +1763,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.value">value</span></code></td>
             <td>
-                  <code><span title="float">float</span></code>
+                  <code>float</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1742,15 +1788,7 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1769,11 +1807,11 @@ The calculation step is done per day on your start date and end date</p>
 </div><p>So technically this does the metrics by day, and assess it based on a min &lt; x &lt; max range</p>
 <p>As of October 16, 2026, this is the saved metric limits</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">METRIC_LIMITS</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">MetricEnum</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">POWER_FACTOR</span><span class="p">:</span> <span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"0.90"</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>
-        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">FREQUENCY</span><span class="p">:</span> <span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"59.70"</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"60.30"</span><span class="p">)),</span>
-        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">VOLTAGE_THD</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"5.0"</span><span class="p">)),</span>
-        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">CURRENT_TDD</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"8.0"</span><span class="p">)),</span>
-        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">VOLTAGE_UNBALANCE</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"2.0"</span><span class="p">)),</span>
+        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">POWER_FACTOR</span><span class="p">:</span> <span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;0.90&quot;</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>
+        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">FREQUENCY</span><span class="p">:</span> <span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;59.70&quot;</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;60.30&quot;</span><span class="p">)),</span>
+        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">VOLTAGE_THD</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;5.0&quot;</span><span class="p">)),</span>
+        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">CURRENT_TDD</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;8.0&quot;</span><span class="p">)),</span>
+        <span class="n">MetricEnum</span><span class="o">.</span><span class="n">VOLTAGE_UNBALANCE</span><span class="p">:</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;2.0&quot;</span><span class="p">)),</span>
     <span class="p">}</span>
 </code></pre></div>
 <p>For sure some of these are wrong, so please review</p>
@@ -1795,7 +1833,6 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1809,7 +1846,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.id">id</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1820,7 +1857,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.meter_id">meter_id</span></code></td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1831,7 +1868,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.metric">metric</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="MetricEnum (modules.power_quality.enums.metrics_enum.MetricEnum)" href="../%5BGET%5D%20metrics/#modules.power_quality.enums.metrics_enum.MetricEnum">MetricEnum</a></code>
+                  <code><a class="autorefs autorefs-internal" title="modules.power_quality.enums.metrics_enum.MetricEnum" href="../%5BGET%5D%20metrics/#modules.power_quality.enums.metrics_enum.MetricEnum">MetricEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1842,7 +1879,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.phase">phase</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="PhaseEnum (modules.power_quality.enums.phase_enum.PhaseEnum)" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
+                  <code><a class="autorefs autorefs-internal" title="modules.power_quality.enums.phase_enum.PhaseEnum" href="../%5BGET%5D%20harmonic%20days/#modules.power_quality.enums.phase_enum.PhaseEnum">PhaseEnum</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1853,7 +1890,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssueDTO.value">value</span></code></td>
             <td>
-                  <code><span title="float">float</span></code>
+                  <code>float</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1878,15 +1915,7 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1921,7 +1950,6 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
 <p><span class="doc-section-title">Attributes:</span></p>
     <table>
       <thead>
@@ -1935,7 +1963,7 @@ The calculation step is done per day on your start date and end date</p>
           <tr class="doc-section-item">
             <td><code><span title="modules.power_quality.dtos.issues_dto.IssuesResponseDTO.issues">issues</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="IssueDTO (modules.power_quality.dtos.issues_dto.IssueDTO)" href="#modules.power_quality.dtos.issues_dto.IssueDTO">IssueDTO</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.power_quality.dtos.issues_dto.IssueDTO" href="#modules.power_quality.dtos.issues_dto.IssueDTO">IssueDTO</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1949,15 +1977,7 @@ The calculation step is done per day on your start date and end date</p>
 
 
 
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
+  <div class="doc doc-children">
 
 
 
@@ -1976,18 +1996,18 @@ The calculation step is done per day on your start date and end date</p>
 </div><p>follows the taiga wiki</p>
 <h1 id="sample-request">Sample Request</h1>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-01 00:00:00"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-10-12 23:59:59"</span>
+<span class="w">    </span><span class="nt">&quot;site_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;start_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-01 00:00:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;end_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-12 23:59:59&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <h1 id="sample-response">Sample Response</h1>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">"issues"</span><span class="p">:[</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"350-current_tdd"</span><span class="p">,</span><span class="nt">"meter_id"</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">"metric"</span><span class="p">:</span><span class="s2">"current_tdd"</span><span class="p">,</span><span class="nt">"phase"</span><span class="p">:</span><span class="s2">"c"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">18.99</span><span class="p">,</span><span class="nt">"detected_at"</span><span class="p">:</span><span class="s2">"2026-10-06"</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"350-current_tdd"</span><span class="p">,</span><span class="nt">"meter_id"</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">"metric"</span><span class="p">:</span><span class="s2">"current_tdd"</span><span class="p">,</span><span class="nt">"phase"</span><span class="p">:</span><span class="s2">"c"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">18.85</span><span class="p">,</span><span class="nt">"detected_at"</span><span class="p">:</span><span class="s2">"2026-10-07"</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"350-current_tdd"</span><span class="p">,</span><span class="nt">"meter_id"</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">"metric"</span><span class="p">:</span><span class="s2">"current_tdd"</span><span class="p">,</span><span class="nt">"phase"</span><span class="p">:</span><span class="s2">"c"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">13.12</span><span class="p">,</span><span class="nt">"detected_at"</span><span class="p">:</span><span class="s2">"2026-10-08"</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"350-current_tdd"</span><span class="p">,</span><span class="nt">"meter_id"</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">"metric"</span><span class="p">:</span><span class="s2">"current_tdd"</span><span class="p">,</span><span class="nt">"phase"</span><span class="p">:</span><span class="s2">"c"</span><span class="p">,</span><span class="nt">"value"</span><span class="p">:</span><span class="mf">8.08</span><span class="p">,</span><span class="nt">"detected_at"</span><span class="p">:</span><span class="s2">"2026-10-12"</span><span class="p">}]</span>
+<span class="w">  </span><span class="nt">&quot;issues&quot;</span><span class="p">:[</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;350-current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;meter_id&quot;</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">&quot;metric&quot;</span><span class="p">:</span><span class="s2">&quot;current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;phase&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">18.99</span><span class="p">,</span><span class="nt">&quot;detected_at&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-06&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;350-current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;meter_id&quot;</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">&quot;metric&quot;</span><span class="p">:</span><span class="s2">&quot;current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;phase&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">18.85</span><span class="p">,</span><span class="nt">&quot;detected_at&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-07&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;350-current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;meter_id&quot;</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">&quot;metric&quot;</span><span class="p">:</span><span class="s2">&quot;current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;phase&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">13.12</span><span class="p">,</span><span class="nt">&quot;detected_at&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-08&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;350-current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;meter_id&quot;</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span><span class="nt">&quot;metric&quot;</span><span class="p">:</span><span class="s2">&quot;current_tdd&quot;</span><span class="p">,</span><span class="nt">&quot;phase&quot;</span><span class="p">:</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="mf">8.08</span><span class="p">,</span><span class="nt">&quot;detected_at&quot;</span><span class="p">:</span><span class="s2">&quot;2026-10-12&quot;</span><span class="p">}]</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -2042,7 +2062,7 @@ The calculation step is done per day on your start date and end date</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
